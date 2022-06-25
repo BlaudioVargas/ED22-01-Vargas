@@ -1,13 +1,12 @@
 ![UCN](docs/images/60x60-ucn-negro.png)
 
 
-# Proyecto: Detección y reidentificación de caras en secuencias de imágenes o video
+# Proyecto: Taller contar personas
 ## Curso: Estructura de datos
 
 ### Integrantes
 
-* Alumno 01 (Rol)
-* Alumno 02 (Rol)
+* Blaudio Vargas (Diseñador y programador)
 
 ### Bitácora
 
