@@ -91,7 +91,6 @@ Registro searchNPC(Registro* head, NonPC* p, int FPS) {//Se busca si existe la p
             aux->FPS = FPS;
             return *head;
         }
-        waitKey(0);
     }
     *head = addNPC(head, p, FPS);
     return *head;
