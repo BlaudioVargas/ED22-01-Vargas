@@ -59,11 +59,11 @@ Se instalarion los codigos dados por el profesor:
 struct NonPC// se guardan los datos de las personas, su punto de origen y si punto final en el espacio
 struct Registro// lista enlazada donde se guardan los datos de las personas
 
-addNPC// se agrega una nueva persona a a lista
-searchNPC// busca si la persona ya existe, en caso positivo acutaliza sus datos, caso contrario la añade como una nueva persona
-deteccion// se identifican a todas las personas de la imagen
-LectorAutomatico// se cargan todas las imagenes de la direccion dada en este caso son un total de 2500 imagenes
-Analizis// se analizan los datos del regeistro y nos da las personas que entran y salen y eliminan los datos invalidos/basura
+1.addNPC// se agrega una nueva persona a a lista
+2.searchNPC// busca si la persona ya existe, en caso positivo acutaliza sus datos, caso contrario la añade como una nueva persona
+3.deteccion// se identifican a todas las personas de la imagen
+4.LectorAutomatico// se cargan todas las imagenes de la direccion dada en este caso son un total de 2500 imagenes
+5.Analizis// se analizan los datos del regeistro y nos da las personas que entran y salen y eliminan los datos invalidos/basura
 
 ### 2.3 Implementación
 
