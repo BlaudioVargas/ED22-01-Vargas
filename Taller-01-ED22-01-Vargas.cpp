@@ -155,17 +155,8 @@ Registro LectorAutomatico(Registro *head,String direccion) {//Se creo un lector 
     return *head;
 }
 
-typedef struct Registro Registro;
-typedef struct NonPC NonPC;
-typedef struct Registro2 Registro2;
-
-int main()
-{
-    std::cout << "Hello World!\n";
-    String direccion = "C:/Ejemplo01/image";//Las imagenes cargadas son de un tamaño de 288X360 pixeles
-    Registro registro = addNPC(NULL,NULL, 0);
-    registro= LectorAutomatico(&registro, direccion);
-    Registro* puntero = &registro;
+void Analizis(Registro* head){
+    Registro* puntero = head;
     cout << "INFORMACION "<< endl;
     puntero = puntero->next;
     int contadorEntrando = 0;
@@ -185,6 +176,19 @@ int main()
     }
     cout << "Entraron un total de " << contadorEntrando << " personas lo cual nos da unos "<< contadorEntrando / horas <<" [Personas/Hora] ingresando" << endl;
     cout << "Salieron un total de " << contadorSaliendo << " personas lo cual nos da unos " << contadorSaliendo / horas << " [Personas/Hora] saliendo" << endl;
+}
+
+typedef struct Registro Registro;
+typedef struct NonPC NonPC;
+typedef struct Registro2 Registro2;
+
+int main()
+{
+    std::cout << "Hello World!\n";
+    String direccion = "C:/Ejemplo01/image";//Las imagenes cargadas son de un tamaño de 288X360 pixeles
+    Registro registro = addNPC(NULL,NULL, 0);
+    registro= LectorAutomatico(&registro, direccion);
+    Analizis(&registro);
     cout << "\nTerminado";
     return 0;
 }
