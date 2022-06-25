@@ -69,7 +69,7 @@ Registro searchNPC(Registro* head, NonPC* p, int FPS) {//Se busca si existe la p
             int fps = puntero->FPS;
             int xP = puntero->NPC->xF;
             int yP = puntero->NPC->yF;
-            if (fps < FPS && FPS < (fps + 15)) {//Se pregunta si la perosna se encuentra entre 1 o 15 imagenes de diferencia para asegurarnos de una continuidad
+            if (fps < FPS && FPS < (fps + 30)) {//Se pregunta si la perosna se encuentra entre 1 o 15 imagenes de diferencia para asegurarnos de una continuidad
                 if (x < techo && x > piso && y <paredR && y>paredL) {//Nos aseguramos de que la persona este dentro del radio del movimiento de busqueda
                     distancia1 = sqrt(pow(xP - x, 2) + pow(yP - y, 2));
                     if (distancia1 < distancia2) {//Se busca a la perosna mas cercana de nuestro punto de busqueda
@@ -88,6 +88,7 @@ Registro searchNPC(Registro* head, NonPC* p, int FPS) {//Se busca si existe la p
             aux->NPC->weast = p->weast;
             aux->NPC->xF = x;
             aux->NPC->yF = y;
+            aux->FPS = FPS;
             return *head;
         }
         waitKey(0);
