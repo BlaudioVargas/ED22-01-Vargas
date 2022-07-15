@@ -37,6 +37,8 @@ Nuestra mision en este taller es ser capaz de manejar los datos entregados por e
 2. Agregarlas a una lista
 3. Actualziar la posicion de las personas atravez del tiempo
 4. Realizar un registro de personas entrando y saliendo
+5. Perfeccionar el codigo
+6. Presentacion final Taller
 
 ### 1.3 Solución propuesta
 
@@ -65,25 +67,32 @@ struct Registro// lista enlazada donde se guardan los datos de las personas
 
 3.deteccion// se identifican a todas las personas de la imagen
 
-4.LectorAutomatico// se cargan todas las imagenes de la direccion dada en este caso son un total de 2500 imagenes
+4.LectorAutomatico// se cargan todas las imagenes de la direccion en el intervalo deseado
 
-5.Analizis// se analizan los datos del regeistro y nos da las personas que entran y salen y eliminan los datos invalidos/basura
+5.Clean list// Se eliminan los datos basura y se determina si la persona esta entrando o saliendo
+
+6.Contador// Se cuentan las personas que entran o salen
+
+7.Flujo// Se ce el flujo de personas que entran o salen por hora
+
+8.LectorDirigido// se determina el intervalo de lectura de las imagenes
+
+9.menu// se muestar las opciones del programa, cada vez que inica un nuevo registro se borra el registro actual
 
 ### 2.3 Implementación
 
-El codigo se encuentra documentado con la funcion de cada uno de ellos
+El codigo se encuentra documentado con la funcion en [Release1.0](Release1.0.cpp)
 
 ## 3. Resultados obtenidos
 
-El codigo nos otorga un resultado satisfactorio, aunque el tiempo que toma para cargar las imagenes presento ser un contratiempo, pero 
-no es nada que con lo que no se puediera trabajar
+Tras pulir el primer codigo se mejoro los tiempos de busqueda, y con la implementacion de una interfaz se facilito la prueba del codigo para la busqueda
+de errores
 
 ## 4. Conclusiones
 
-Se pueden ver las raizes de los lenguajes anteriormente vistos en el lenguaje c++, debido a que el lenguaje c++ trabaja a un nivel de maquina inferior
-nos da mas libertades creativas para solucionar problemas, del mismo modo requiere una mayor presicion en el codigo, ya que la probabilidad de cometer
-erroes durante la programacion es moderadamente alta comparada con otros lenguajes, fuera de esto a demostrado ser un lenguaje muy versatil y que posee
-un gran potencial para la programacion.
+Se pueden apreciar los resultados del refinamiento del codigo, una vez estubo listo el primer codigo y se empezo a revisarlo se pudo ver los problemas del
+codigo y con su correcion se pudo apreciar las ventajas del lenguaje C++, ya que se pudienron hacer maniovras que en otros lenguajes requieren mas 
+lineas de codigo para resolver esos problemas
 
 # Referecia
 ----
