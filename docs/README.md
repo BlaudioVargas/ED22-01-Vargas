@@ -81,7 +81,7 @@ struct Registro// lista enlazada donde se guardan los datos de las personas
 
 ### 2.3 Implementación
 
-El codigo se encuentra documentado con la funcion en [Release1.0](Release1.0.cpp)
+El codigo se encuentra documentado con la funcion en [Release1.0](/Release1.0.cpp)
 
 ## 3. Resultados obtenidos
 
